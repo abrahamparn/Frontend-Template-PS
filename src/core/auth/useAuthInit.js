@@ -6,6 +6,7 @@ import { useAuthStore } from "../../features/auth/stores/authStore";
  * This checks for existing tokens and restores the session
  * Uses a ref to ensure initialization only happens once, even in StrictMode
  */
+//Check main.jsx
 export const useAuthInit = () => {
   const initializeAuth = useAuthStore((state) => state.initializeAuth);
   const status = useAuthStore((state) => state.status);

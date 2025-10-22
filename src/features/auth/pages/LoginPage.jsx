@@ -7,6 +7,7 @@ import { useAuthStore } from "../stores/authStore";
 import { loginSchema } from "../utils/validation";
 import { useLogin } from "../hooks/useLogin";
 import imageDemo from "../../../assets/demo_page.webp";
+import logger from "../../../core/utils/logger";
 export default function LoginPage() {
   const navigate = useNavigate();
   const [serverError, setServerError] = useState("");
